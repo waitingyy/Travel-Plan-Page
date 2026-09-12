@@ -329,10 +329,19 @@ function flightCard(journey, index) {
 }
 
 function renderFlights() {
-  const journeys = state.data.flightJourneys;
-  $("#flight-carousel").innerHTML = journeys.map(flightCard).join("");
-  $("#flight-dots").innerHTML = journeys.map((_, index) => `<span class="carousel-dot${index === 0 ? " is-active" : ""}"></span>`).join("");
-  $("#flight-index").textContent = `1 / ${journeys.length}`;
+  if (!state || !state.data) return;
+
+  const journeys = Array.isArray(state?.data?.flightJourneys)
+    ? state.data.flightJourneys
+    : Array.isArray(state?.data?.flights)
+      ? state.data.flights
+      : [];
+
+  $("#flight-dots").innerHTML = journeys
+    .map((_, index) => `<span class="carousel-dot${index === 0 ? " is-active" : ""}"></span>`)
+    .join("");
+
+  $("#flight-index").textContent = `1 / ${journeys.length || 1}`;
 
   const carousel = $("#flight-carousel");
   let scheduled = false;
