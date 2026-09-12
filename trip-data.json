@@ -28,7 +28,11 @@
     "heroTitle": "意大利",
     "heroEyebrow": "ITALY 2026",
     "countries": [
-      { "code": "IT", "name": "Italy", "nameZh": "意大利" }
+      {
+        "code": "IT",
+        "name": "Italy",
+        "nameZh": "意大利"
+      }
     ],
     "primaryDestinationCountries": ["IT"]
   },
@@ -36,28 +40,162 @@
     "durationDays": 12
   },
   "flightJourneys": [
-    { "id": "J1", "title": "去程｜香港 → 羅馬（伊斯坦堡轉機）", "status": "confirmed", "placeholder": false },
-    { "id": "J2", "title": "回程｜威尼斯 → 香港（伊斯坦堡轉機）", "status": "confirmed", "placeholder": false }
+    {
+      "id": "J1",
+      "title": "去程｜香港 → 羅馬（伊斯坦堡轉機）",
+      "status": "confirmed",
+      "placeholder": false
+    },
+    {
+      "id": "J2",
+      "title": "回程｜威尼斯 → 香港（伊斯坦堡轉機）",
+      "status": "confirmed",
+      "placeholder": false
+    }
   ],
   "flights": [
     {
       "journeyId": "J1",
       "sequence": 1,
       "flightNumber": "TK71",
-      "airline": { "nameZh": "土耳其航空", "name": "Turkish Airlines" },
-      "departure": { "airportCode": "HKG", "city": "香港", "date": "2026-10-09", "time": "22:30", "utcOffset": "+08:00" },
-      "arrival": { "airportCode": "IST", "city": "伊斯坦堡", "date": "2026-10-10", "time": "05:35", "utcOffset": "+03:00" }
+      "airline": {
+        "nameZh": "土耳其航空",
+        "name": "Turkish Airlines"
+      },
+      "departure": {
+        "airportCode": "HKG",
+        "city": "香港",
+        "date": "2026-10-09",
+        "time": "22:30",
+        "utcOffset": "+08:00"
+      },
+      "arrival": {
+        "airportCode": "IST",
+        "city": "伊斯坦堡",
+        "date": "2026-10-10",
+        "time": "05:35",
+        "utcOffset": "+03:00"
+      }
     },
     {
       "journeyId": "J1",
       "sequence": 2,
       "flightNumber": "TK1861",
-      "airline": { "nameZh": "土耳其航空", "name": "Turkish Airlines" },
-      "departure": { "airportCode": "IST", "city": "伊斯坦堡", "date": "2026-10-10", "time": "07:15", "utcOffset": "+03:00" },
-      "arrival": { "airportCode": "FCO", "city": "羅馬", "date": "2026-10-10", "time": "09:20", "utcOffset": "+02:00" }
+      "airline": {
+        "nameZh": "土耳其航空",
+        "name": "Turkish Airlines"
+      },
+      "departure": {
+        "airportCode": "IST",
+        "city": "伊斯坦堡",
+        "date": "2026-10-10",
+        "time": "07:15",
+        "utcOffset": "+03:00"
+      },
+      "arrival": {
+        "airportCode": "FCO",
+        "city": "羅馬",
+        "date": "2026-10-10",
+        "time": "09:20",
+        "utcOffset": "+02:00"
+      }
+    },
+    {
+      "journeyId": "J2",
+      "sequence": 1,
+      "flightNumber": "TK1870",
+      "airline": {
+        "nameZh": "土耳其航空",
+        "name": "Turkish Airlines"
+      },
+      "departure": {
+        "airportCode": "VCE",
+        "city": "威尼斯",
+        "date": "2026-10-19",
+        "time": "20:00",
+        "utcOffset": "+02:00"
+      },
+      "arrival": {
+        "airportCode": "IST",
+        "city": "伊斯坦堡",
+        "date": "2026-10-19",
+        "time": "23:30",
+        "utcOffset": "+03:00"
+      }
+    },
+    {
+      "journeyId": "J2",
+      "sequence": 2,
+      "flightNumber": "TK70",
+      "airline": {
+        "nameZh": "土耳其航空",
+        "name": "Turkish Airlines"
+      },
+      "departure": {
+        "airportCode": "IST",
+        "city": "伊斯坦堡",
+        "date": "2026-10-20",
+        "time": "01:50",
+        "utcOffset": "+03:00"
+      },
+      "arrival": {
+        "airportCode": "HKG",
+        "city": "香港",
+        "date": "2026-10-20",
+        "time": "17:15",
+        "utcOffset": "+08:00"
+      }
     }
   ],
   "days": [
+    {
+      "id": "D1",
+      "day": 1,
+      "date": "2026-10-09",
+      "title": "香港出發",
+      "locations": ["香港", "機上"],
+      "schedule": [
+        {
+          "time": "22:30",
+          "text": "HKG 起飛，Turkish Airlines TK71",
+          "type": "flight",
+          "placeIds": ["hkg"]
+        }
+      ],
+      "notes": [
+        "出發前完成證件、保險、門票與酒店文件離線備份。"
+      ]
+    },
+    {
+      "id": "D2",
+      "day": 2,
+      "date": "2026-10-10",
+      "title": "抵達羅馬與調整時差",
+      "locations": ["羅馬 FCO", "Prati", "Trevi"],
+      "schedule": [
+        {
+          "time": "09:20",
+          "text": "抵達 Rome FCO",
+          "type": "flight",
+          "placeIds": ["rome-fco"]
+        },
+        {
+          "time": "12:30",
+          "text": "前往/入住 Astom Suites（Via Boezio 31）",
+          "type": "hotel",
+          "placeIds": ["astom-suites"]
+        },
+        {
+          "time": "18:00",
+          "text": "Spanish Steps / Trevi Fountain 輕鬆散步",
+          "type": "sightseeing",
+          "placeIds": ["spanish-steps", "trevi"]
+        }
+      ],
+      "notes": [
+        "Borghese Gallery 只作 bonus，精神不足可直接休息。"
+      ]
+    },
     {
       "id": "D3",
       "day": 3,
@@ -65,19 +203,500 @@
       "title": "羅馬古城日（下午鬥獸場）",
       "locations": ["Trevi", "Pantheon", "Navona", "Colosseum"],
       "schedule": [
-        { "time": "08:30", "text": "Trevi Fountain", "type": "sightseeing", "placeIds": ["trevi"] },
-        { "time": "09:15", "text": "Pantheon", "type": "sightseeing", "placeIds": ["pantheon"] },
-        { "time": "10:00", "text": "Piazza Navona", "type": "sightseeing", "placeIds": ["navona"] },
-        { "time": "14:15", "text": "Colosseum 已預約入場", "type": "ticket", "placeIds": ["colosseum"] }
+        {
+          "time": "08:30",
+          "text": "Trevi Fountain 早拍照",
+          "type": "sightseeing",
+          "placeIds": ["trevi"]
+        },
+        {
+          "time": "09:15",
+          "text": "Pantheon（建議入內）",
+          "type": "sightseeing",
+          "placeIds": ["pantheon"]
+        },
+        {
+          "time": "10:00",
+          "text": "Piazza Navona 散步",
+          "type": "sightseeing",
+          "placeIds": ["navona"]
+        },
+        {
+          "time": "12:00",
+          "text": "午餐（建議 Monti / Largo Argentina）",
+          "type": "meal",
+          "placeIds": ["monti", "largo-argentina"]
+        },
+        {
+          "time": "13:30",
+          "text": "到 Colosseum 區域準備入場",
+          "type": "transit",
+          "placeIds": ["colosseum"]
+        },
+        {
+          "time": "14:15",
+          "text": "Colosseum 已預約入場",
+          "type": "ticket",
+          "ticketIds": ["T-COL-20261011-1415"],
+          "placeIds": ["colosseum"]
+        },
+        {
+          "time": "15:30",
+          "text": "Roman Forum / Palatine Hill 精簡參觀",
+          "type": "sightseeing",
+          "placeIds": ["roman-forum", "palatine-hill"]
+        }
+      ],
+      "notes": [
+        "當日節奏前鬆後重，避免再加大型博物館。"
+      ]
+    },
+    {
+      "id": "D4",
+      "day": 4,
+      "date": "2026-10-12",
+      "title": "梵蒂岡日",
+      "locations": ["St Peter", "Vatican Museums", "Sistine Chapel"],
+      "schedule": [
+        {
+          "time": "07:30",
+          "text": "聖彼得大教堂",
+          "type": "sightseeing",
+          "placeIds": ["st-peters-basilica"]
+        },
+        {
+          "time": "12:30",
+          "text": "前往 Vatican Museums 入口",
+          "type": "transit",
+          "placeIds": ["vatican-museums"]
+        },
+        {
+          "time": "13:00",
+          "text": "Vatican Museums + Sistine Chapel",
+          "type": "ticket",
+          "ticketIds": ["T-VATICAN-20261012-1300"],
+          "placeIds": ["vatican-museums", "sistine-chapel"]
+        },
+        {
+          "time": "16:30",
+          "text": "聖天使橋外觀",
+          "type": "sightseeing",
+          "placeIds": ["ponte-sant-angelo"]
+        }
+      ],
+      "notes": [
+        "不建議同日登穹頂或再加城堡入內。"
+      ]
+    },
+    {
+      "id": "D5",
+      "day": 5,
+      "date": "2026-10-13",
+      "title": "羅馬 → 佛羅倫斯",
+      "locations": ["Roma Termini", "Firenze SMN", "Florence Center"],
+      "schedule": [
+        {
+          "time": "08:55",
+          "text": "火車 Roma Termini → Firenze SMN（08:55–10:31）",
+          "type": "train",
+          "placeIds": ["roma-termini", "firenze-smn"]
+        },
+        {
+          "time": "11:00",
+          "text": "寄存行李 / 入住（Largo Fratelli Alinari, 15）",
+          "type": "hotel",
+          "placeIds": ["florence-hotel-alinari"]
+        },
+        {
+          "time": "15:00",
+          "text": "Duomo 外觀 / Signoria / 老橋",
+          "type": "sightseeing",
+          "placeIds": ["duomo-florence", "piazza-signoria", "ponte-vecchio"]
+        },
+        {
+          "time": "18:00",
+          "text": "Piazzale Michelangelo",
+          "type": "sightseeing",
+          "placeIds": ["piazzale-michelangelo"]
+        }
+      ]
+    },
+    {
+      "id": "D6",
+      "day": 6,
+      "date": "2026-10-14",
+      "title": "佛羅倫斯：烏菲茲日",
+      "locations": ["Uffizi", "Signoria", "Ponte Vecchio"],
+      "schedule": [
+        {
+          "time": "09:00",
+          "text": "Uffizi Gallery（建議 2–2.5 小時）",
+          "type": "ticket",
+          "ticketIds": ["T-UFFIZI-20261014-AM"],
+          "placeIds": ["uffizi"]
+        },
+        {
+          "time": "12:00",
+          "text": "Signoria / 午餐",
+          "type": "meal",
+          "placeIds": ["piazza-signoria"]
+        },
+        {
+          "time": "14:00",
+          "text": "Ponte Vecchio / Arno 散步",
+          "type": "sightseeing",
+          "placeIds": ["ponte-vecchio", "arno-river"]
+        },
+        {
+          "time": "15:30",
+          "text": "Santa Croce（可選）",
+          "type": "sightseeing",
+          "placeIds": ["santa-croce"]
+        }
+      ]
+    },
+    {
+      "id": "D7",
+      "day": 7,
+      "date": "2026-10-15",
+      "title": "托斯卡納一日遊",
+      "locations": ["San Gimignano", "Chianti", "Siena"],
+      "schedule": [
+        {
+          "time": "08:00",
+          "text": "Piazzale Montelungo 集合出發",
+          "type": "tour",
+          "placeIds": ["piazzale-montelungo"]
+        },
+        {
+          "time": "10:00",
+          "text": "San Gimignano 自由活動",
+          "type": "tour",
+          "placeIds": ["san-gimignano"]
+        },
+        {
+          "time": "12:30",
+          "text": "Chianti 午餐 + wine tasting",
+          "type": "tour",
+          "placeIds": ["chianti"]
+        },
+        {
+          "time": "15:30",
+          "text": "Siena + Cathedral",
+          "type": "tour",
+          "placeIds": ["siena", "siena-cathedral"]
+        },
+        {
+          "time": "19:00",
+          "text": "返回 Florence",
+          "type": "tour",
+          "placeIds": ["florence-center"]
+        }
+      ],
+      "notes": [
+        "建議 Option 3：Lunch, Wine, Siena & Cathedral Tour。"
+      ]
+    },
+    {
+      "id": "D8",
+      "day": 8,
+      "date": "2026-10-16",
+      "title": "佛羅倫斯：大衛像 + 穹頂 + 牛扒",
+      "locations": ["Accademia", "Duomo", "Dall'Oste"],
+      "schedule": [
+        {
+          "time": "09:00",
+          "text": "Accademia Gallery（大衛像）",
+          "type": "ticket",
+          "ticketIds": ["T-ACCADEMIA-20261016-AM"],
+          "placeIds": ["accademia"]
+        },
+        {
+          "time": "14:30",
+          "text": "Brunelleschi Dome（14:00/15:00 檔優先）",
+          "type": "ticket",
+          "ticketIds": ["T-DUOMO-20261016-PM"],
+          "placeIds": ["duomo-florence"]
+        },
+        {
+          "time": "19:30",
+          "text": "Trattoria Dall'Oste 晚餐",
+          "type": "meal",
+          "ticketIds": ["R-DALLOSTE-20261016-1930"],
+          "placeIds": ["dalloste"]
+        }
+      ],
+      "notes": [
+        "同日不建議再加 Giotto Bell Tower。"
+      ]
+    },
+    {
+      "id": "D9",
+      "day": 9,
+      "date": "2026-10-17",
+      "title": "佛羅倫斯 → 威尼斯",
+      "locations": ["Firenze SMN", "Venezia S. Lucia", "San Marco"],
+      "schedule": [
+        {
+          "time": "09:39",
+          "text": "火車 Firenze SMN → Venezia S. Lucia（09:39–11:55）",
+          "type": "train",
+          "placeIds": ["firenze-smn", "venezia-sl"]
+        },
+        {
+          "time": "12:15",
+          "text": "入住 Hotel Agli Artisti（近車站）",
+          "type": "hotel",
+          "placeIds": ["agli-artisti"]
+        },
+        {
+          "time": "15:00",
+          "text": "Vaporetto Line 1（大運河）",
+          "type": "transport",
+          "placeIds": ["grand-canal"]
+        },
+        {
+          "time": "18:00",
+          "text": "Rialto / San Marco 夜景",
+          "type": "sightseeing",
+          "placeIds": ["rialto", "san-marco"]
+        }
+      ]
+    },
+    {
+      "id": "D10",
+      "day": 10,
+      "date": "2026-10-18",
+      "title": "威尼斯核心日",
+      "locations": ["Doge's Palace", "St Mark's Basilica", "Dorsoduro"],
+      "schedule": [
+        {
+          "time": "09:00",
+          "text": "Doge’s Palace",
+          "type": "ticket",
+          "ticketIds": ["T-DOGE-20261018-AM"],
+          "placeIds": ["doge"]
+        },
+        {
+          "time": "14:00",
+          "text": "Basilica di San Marco",
+          "type": "ticket",
+          "ticketIds": ["T-SANMARCO-20261018-PM"],
+          "placeIds": ["san-marco-basilica"]
+        },
+        {
+          "time": "16:30",
+          "text": "Accademia Bridge / Dorsoduro / Zattere",
+          "type": "sightseeing",
+          "placeIds": ["accademia-bridge", "dorsoduro", "zattere"]
+        }
+      ]
+    },
+    {
+      "id": "D11",
+      "day": 11,
+      "date": "2026-10-19",
+      "title": "威尼斯離境",
+      "locations": ["Venice", "VCE"],
+      "schedule": [
+        {
+          "time": "10:00",
+          "text": "輕鬆散步 / 手信",
+          "type": "free",
+          "placeIds": ["venice-center"]
+        },
+        {
+          "time": "15:15",
+          "text": "前往 VCE 機場",
+          "type": "transit",
+          "placeIds": ["vce"]
+        },
+        {
+          "time": "20:00",
+          "text": "VCE 起飛，Turkish Airlines TK1870",
+          "type": "flight",
+          "placeIds": ["vce"]
+        }
+      ],
+      "notes": [
+        "如需退稅，預留額外機場時間。"
+      ]
+    },
+    {
+      "id": "D12",
+      "day": 12,
+      "date": "2026-10-20",
+      "title": "返抵香港",
+      "locations": ["香港"],
+      "schedule": [
+        {
+          "time": "17:15",
+          "text": "抵達 HKG",
+          "type": "flight",
+          "placeIds": ["hkg"]
+        }
       ]
     }
   ],
+  "ticketPlanning": {
+    "items": [
+      {
+        "id": "T-COL-20261011-1415",
+        "dayId": "D3",
+        "name": "Colosseum",
+        "requirement": "advance-required",
+        "purchaseStatus": "purchased",
+        "guidance": [
+          "已預約",
+          "2026-10-11 14:15 入場",
+          "提前 30–45 分鐘到場"
+        ]
+      },
+      {
+        "id": "T-VATICAN-20261012-1300",
+        "dayId": "D4",
+        "name": "Vatican Museums",
+        "requirement": "advance-required",
+        "purchaseStatus": "pending",
+        "guidance": [
+          "建議 13:00 入場"
+        ]
+      },
+      {
+        "id": "T-UFFIZI-20261014-AM",
+        "dayId": "D6",
+        "name": "Uffizi Gallery",
+        "requirement": "advance-required",
+        "purchaseStatus": "pending",
+        "guidance": [
+          "建議 09:00 / 09:30 / 10:00"
+        ]
+      },
+      {
+        "id": "T-ACCADEMIA-20261016-AM",
+        "dayId": "D8",
+        "name": "Accademia Gallery",
+        "requirement": "advance-required",
+        "purchaseStatus": "pending",
+        "guidance": [
+          "建議 09:00 / 09:30"
+        ]
+      },
+      {
+        "id": "T-DUOMO-20261016-PM",
+        "dayId": "D8",
+        "name": "Brunelleschi Dome",
+        "requirement": "advance-required",
+        "purchaseStatus": "pending",
+        "guidance": [
+          "建議 14:00 / 15:00"
+        ]
+      },
+      {
+        "id": "T-DOGE-20261018-AM",
+        "dayId": "D10",
+        "name": "Doge's Palace",
+        "requirement": "advance-recommended",
+        "purchaseStatus": "pending",
+        "guidance": [
+          "建議 09:00 / 10:00"
+        ]
+      },
+      {
+        "id": "T-SANMARCO-20261018-PM",
+        "dayId": "D10",
+        "name": "Basilica di San Marco",
+        "requirement": "advance-recommended",
+        "purchaseStatus": "pending",
+        "guidance": [
+          "建議 14:00 / 15:00"
+        ]
+      },
+      {
+        "id": "R-DALLOSTE-20261016-1930",
+        "dayId": "D8",
+        "name": "Trattoria Dall'Oste",
+        "requirement": "advance-recommended",
+        "purchaseStatus": "pending",
+        "guidance": [
+          "建議 19:00 / 19:30 / 20:00"
+        ]
+      }
+    ]
+  },
+  "preTrip": {
+    "todoItems": [
+      { "id": "todo-1", "text": "確認 10/12 Vatican Museums 入場", "completed": false },
+      { "id": "todo-2", "text": "預約 10/14 Uffizi", "completed": false },
+      { "id": "todo-3", "text": "預約 10/16 Accademia", "completed": false },
+      { "id": "todo-4", "text": "預約 10/16 Brunelleschi Dome", "completed": false },
+      { "id": "todo-5", "text": "確認 10/15 Tuscany Tour（Option 3）", "completed": false },
+      { "id": "todo-6", "text": "預約 10/18 Doge's Palace + St Mark's Basilica", "completed": false },
+      { "id": "todo-7", "text": "預約 Trattoria Dall'Oste（10/16 19:30）", "completed": false }
+    ]
+  },
   "places": [
+    { "id": "hkg", "nameZh": "香港國際機場", "name": "Hong Kong International Airport", "cityOrArea": "Hong Kong", "googleMapsQuery": "Hong Kong International Airport", "googleMapsUrl": "https://maps.google.com/?q=Hong+Kong+International+Airport" },
+    { "id": "rome-fco", "nameZh": "羅馬 FCO 機場", "name": "Rome FCO", "cityOrArea": "Rome", "googleMapsQuery": "Leonardo da Vinci International Airport FCO", "googleMapsUrl": "https://maps.google.com/?q=41.8003,12.2389" },
+    { "id": "astom-suites", "nameZh": "Astom Suites", "name": "Astom Suites", "cityOrArea": "Rome", "googleMapsQuery": "Astom Suites Via Boezio 31 Roma", "googleMapsUrl": "https://maps.google.com/?q=Via+Boezio+31+Roma" },
+    { "id": "spanish-steps", "nameZh": "西班牙階梯", "name": "Spanish Steps", "cityOrArea": "Rome", "googleMapsQuery": "Spanish Steps Rome", "googleMapsUrl": "https://maps.google.com/?q=Spanish+Steps+Rome" },
     { "id": "trevi", "nameZh": "特雷維噴泉", "name": "Trevi Fountain", "cityOrArea": "Rome", "googleMapsQuery": "Trevi Fountain Rome", "googleMapsUrl": "https://maps.google.com/?q=Trevi+Fountain+Rome" },
     { "id": "pantheon", "nameZh": "萬神殿", "name": "Pantheon", "cityOrArea": "Rome", "googleMapsQuery": "Pantheon Rome", "googleMapsUrl": "https://maps.google.com/?q=Pantheon+Rome" },
     { "id": "navona", "nameZh": "納沃納廣場", "name": "Piazza Navona", "cityOrArea": "Rome", "googleMapsQuery": "Piazza Navona Rome", "googleMapsUrl": "https://maps.google.com/?q=Piazza+Navona+Rome" },
-    { "id": "colosseum", "nameZh": "鬥獸場", "name": "Colosseum", "cityOrArea": "Rome", "googleMapsQuery": "Colosseum Rome", "googleMapsUrl": "https://maps.google.com/?q=Colosseum+Rome" }
+    { "id": "monti", "nameZh": "Monti 區", "name": "Monti", "cityOrArea": "Rome", "googleMapsQuery": "Monti Rome", "googleMapsUrl": "https://maps.google.com/?q=Monti+Rome" },
+    { "id": "largo-argentina", "nameZh": "Largo Argentina", "name": "Largo di Torre Argentina", "cityOrArea": "Rome", "googleMapsQuery": "Largo di Torre Argentina", "googleMapsUrl": "https://maps.google.com/?q=Largo+di+Torre+Argentina" },
+    { "id": "colosseum", "nameZh": "鬥獸場", "name": "Colosseum", "cityOrArea": "Rome", "googleMapsQuery": "Colosseum Rome", "googleMapsUrl": "https://maps.google.com/?q=Colosseum+Rome" },
+    { "id": "roman-forum", "nameZh": "古羅馬廣場", "name": "Roman Forum", "cityOrArea": "Rome", "googleMapsQuery": "Roman Forum Rome", "googleMapsUrl": "https://maps.google.com/?q=Roman+Forum+Rome" },
+    { "id": "palatine-hill", "nameZh": "帕拉蒂尼山", "name": "Palatine Hill", "cityOrArea": "Rome", "googleMapsQuery": "Palatine Hill Rome", "googleMapsUrl": "https://maps.google.com/?q=Palatine+Hill+Rome" },
+    { "id": "st-peters-basilica", "nameZh": "聖彼得大教堂", "name": "St. Peter's Basilica", "cityOrArea": "Vatican City", "googleMapsQuery": "St Peter's Basilica", "googleMapsUrl": "https://maps.google.com/?q=St+Peter%27s+Basilica" },
+    { "id": "vatican-museums", "nameZh": "梵蒂岡博物館", "name": "Vatican Museums", "cityOrArea": "Vatican City", "googleMapsQuery": "Vatican Museums", "googleMapsUrl": "https://maps.google.com/?q=Vatican+Museums" },
+    { "id": "sistine-chapel", "nameZh": "西斯汀禮拜堂", "name": "Sistine Chapel", "cityOrArea": "Vatican City", "googleMapsQuery": "Sistine Chapel", "googleMapsUrl": "https://maps.google.com/?q=Sistine+Chapel" },
+    { "id": "ponte-sant-angelo", "nameZh": "聖天使橋", "name": "Ponte Sant'Angelo", "cityOrArea": "Rome", "googleMapsQuery": "Ponte Sant'Angelo", "googleMapsUrl": "https://maps.google.com/?q=Ponte+Sant%27Angelo" },
+    { "id": "roma-termini", "nameZh": "羅馬 Termini 車站", "name": "Roma Termini", "cityOrArea": "Rome", "googleMapsQuery": "Roma Termini", "googleMapsUrl": "https://maps.google.com/?q=Roma+Termini" },
+    { "id": "firenze-smn", "nameZh": "佛羅倫斯 SMN 車站", "name": "Firenze Santa Maria Novella", "cityOrArea": "Florence", "googleMapsQuery": "Firenze Santa Maria Novella", "googleMapsUrl": "https://maps.google.com/?q=Firenze+Santa+Maria+Novella" },
+    { "id": "florence-hotel-alinari", "nameZh": "Largo Fratelli Alinari, 15", "name": "Largo Fratelli Alinari 15", "cityOrArea": "Florence", "googleMapsQuery": "Largo Fratelli Alinari 15 Florence", "googleMapsUrl": "https://maps.google.com/?q=Largo+Fratelli+Alinari+15+Florence" },
+    { "id": "duomo-florence", "nameZh": "佛羅倫斯主教座堂", "name": "Cathedral of Santa Maria del Fiore", "cityOrArea": "Florence", "googleMapsQuery": "Cathedral of Santa Maria del Fiore", "googleMapsUrl": "https://maps.google.com/?q=Cathedral+of+Santa+Maria+del+Fiore" },
+    { "id": "piazza-signoria", "nameZh": "領主廣場", "name": "Piazza della Signoria", "cityOrArea": "Florence", "googleMapsQuery": "Piazza della Signoria", "googleMapsUrl": "https://maps.google.com/?q=Piazza+della+Signoria" },
+    { "id": "ponte-vecchio", "nameZh": "老橋", "name": "Ponte Vecchio", "cityOrArea": "Florence", "googleMapsQuery": "Ponte Vecchio", "googleMapsUrl": "https://maps.google.com/?q=Ponte+Vecchio" },
+    { "id": "piazzale-michelangelo", "nameZh": "米開朗基羅廣場", "name": "Piazzale Michelangelo", "cityOrArea": "Florence", "googleMapsQuery": "Piazzale Michelangelo", "googleMapsUrl": "https://maps.google.com/?q=Piazzale+Michelangelo" },
+    { "id": "uffizi", "nameZh": "烏菲茲美術館", "name": "Uffizi Gallery", "cityOrArea": "Florence", "googleMapsQuery": "Uffizi Gallery", "googleMapsUrl": "https://maps.google.com/?q=Uffizi+Gallery" },
+    { "id": "arno-river", "nameZh": "阿諾河", "name": "Arno River", "cityOrArea": "Florence", "googleMapsQuery": "Arno River Florence", "googleMapsUrl": "https://maps.google.com/?q=Arno+River+Florence" },
+    { "id": "santa-croce", "nameZh": "聖十字大殿", "name": "Basilica di Santa Croce", "cityOrArea": "Florence", "googleMapsQuery": "Basilica di Santa Croce Florence", "googleMapsUrl": "https://maps.google.com/?q=Basilica+di+Santa+Croce+Florence" },
+    { "id": "piazzale-montelungo", "nameZh": "Piazzale Montelungo", "name": "Piazzale Montelungo", "cityOrArea": "Florence", "googleMapsQuery": "Piazzale Montelungo Florence", "googleMapsUrl": "https://maps.google.com/?q=Piazzale+Montelungo+Florence" },
+    { "id": "san-gimignano", "nameZh": "聖吉米尼亞諾", "name": "San Gimignano", "cityOrArea": "Tuscany", "googleMapsQuery": "San Gimignano Italy", "googleMapsUrl": "https://maps.google.com/?q=San+Gimignano+Italy" },
+    { "id": "chianti", "nameZh": "基安蒂", "name": "Chianti", "cityOrArea": "Tuscany", "googleMapsQuery": "Chianti Tuscany", "googleMapsUrl": "https://maps.google.com/?q=Chianti+Tuscany" },
+    { "id": "siena", "nameZh": "錫耶納", "name": "Siena", "cityOrArea": "Tuscany", "googleMapsQuery": "Siena Italy", "googleMapsUrl": "https://maps.google.com/?q=Siena+Italy" },
+    { "id": "siena-cathedral", "nameZh": "錫耶納主教座堂", "name": "Siena Cathedral", "cityOrArea": "Siena", "googleMapsQuery": "Siena Cathedral", "googleMapsUrl": "https://maps.google.com/?q=Siena+Cathedral" },
+    { "id": "florence-center", "nameZh": "佛羅倫斯市中心", "name": "Florence Center", "cityOrArea": "Florence", "googleMapsQuery": "Florence city center", "googleMapsUrl": "https://maps.google.com/?q=Florence+city+center" },
+    { "id": "accademia", "nameZh": "學院美術館", "name": "Galleria dell'Accademia", "cityOrArea": "Florence", "googleMapsQuery": "Galleria dell'Accademia Florence", "googleMapsUrl": "https://maps.google.com/?q=Galleria+dell%27Accademia+Florence" },
+    { "id": "dalloste", "nameZh": "Trattoria Dall'Oste", "name": "Trattoria Dall'Oste", "cityOrArea": "Florence", "googleMapsQuery": "Trattoria Dall'Oste Florence", "googleMapsUrl": "https://maps.google.com/?q=Trattoria+Dall%27Oste+Florence" },
+    { "id": "venezia-sl", "nameZh": "威尼斯聖露西亞車站", "name": "Venezia Santa Lucia", "cityOrArea": "Venice", "googleMapsQuery": "Venezia Santa Lucia", "googleMapsUrl": "https://maps.google.com/?q=Venezia+Santa+Lucia" },
+    { "id": "agli-artisti", "nameZh": "Hotel Agli Artisti", "name": "Hotel Agli Artisti", "cityOrArea": "Venice", "googleMapsQuery": "Hotel Agli Artisti Venice", "googleMapsUrl": "https://maps.google.com/?q=Hotel+Agli+Artisti+Venice" },
+    { "id": "grand-canal", "nameZh": "威尼斯大運河", "name": "Grand Canal", "cityOrArea": "Venice", "googleMapsQuery": "Grand Canal Venice", "googleMapsUrl": "https://maps.google.com/?q=Grand+Canal+Venice" },
+    { "id": "rialto", "nameZh": "里亞托橋", "name": "Rialto Bridge", "cityOrArea": "Venice", "googleMapsQuery": "Rialto Bridge Venice", "googleMapsUrl": "https://maps.google.com/?q=Rialto+Bridge+Venice" },
+    { "id": "san-marco", "nameZh": "聖馬可廣場", "name": "Piazza San Marco", "cityOrArea": "Venice", "googleMapsQuery": "Piazza San Marco", "googleMapsUrl": "https://maps.google.com/?q=Piazza+San+Marco" },
+    { "id": "doge", "nameZh": "總督宮", "name": "Doge's Palace", "cityOrArea": "Venice", "googleMapsQuery": "Doge's Palace Venice", "googleMapsUrl": "https://maps.google.com/?q=Doge%27s+Palace+Venice" },
+    { "id": "san-marco-basilica", "nameZh": "聖馬可大教堂", "name": "Basilica di San Marco", "cityOrArea": "Venice", "googleMapsQuery": "Basilica di San Marco", "googleMapsUrl": "https://maps.google.com/?q=Basilica+di+San+Marco" },
+    { "id": "accademia-bridge", "nameZh": "學院橋", "name": "Accademia Bridge", "cityOrArea": "Venice", "googleMapsQuery": "Accademia Bridge Venice", "googleMapsUrl": "https://maps.google.com/?q=Accademia+Bridge+Venice" },
+    { "id": "dorsoduro", "nameZh": "多爾索杜羅", "name": "Dorsoduro", "cityOrArea": "Venice", "googleMapsQuery": "Dorsoduro Venice", "googleMapsUrl": "https://maps.google.com/?q=Dorsoduro+Venice" },
+    { "id": "zattere", "nameZh": "Zattere 海濱", "name": "Zattere", "cityOrArea": "Venice", "googleMapsQuery": "Zattere Venice", "googleMapsUrl": "https://maps.google.com/?q=Zattere+Venice" },
+    { "id": "venice-center", "nameZh": "威尼斯市中心", "name": "Venice Center", "cityOrArea": "Venice", "googleMapsQuery": "Venice city center", "googleMapsUrl": "https://maps.google.com/?q=Venice+city+center" },
+    { "id": "vce", "nameZh": "威尼斯機場 VCE", "name": "Venice Marco Polo Airport", "cityOrArea": "Venice", "googleMapsQuery": "Venice Marco Polo Airport", "googleMapsUrl": "https://maps.google.com/?q=Venice+Marco+Polo+Airport" }
   ],
+  "restaurants": [
+    {
+      "name": "Trattoria Dall'Oste",
+      "city": "Florence",
+      "googleMapsUrl": "https://maps.google.com/?q=Trattoria+Dall%27Oste+Florence"
+    }
+  ],
+  "mapLinks": {
+    "navigationPolicy": {
+      "noNavigationTypes": [],
+      "selfNavigationTypes": ["meal"]
+    },
+    "navigationPlaces": []
+  },
   "routeMap": {
     "defaultRegionId": "italy-main",
     "regions": [
@@ -85,7 +704,12 @@
         "id": "italy-main",
         "name": "Italy Route",
         "baseImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Italy_relief_location_map.jpg/1280px-Italy_relief_location_map.jpg",
-        "bounds": { "west": 6.5, "east": 13.5, "south": 41.5, "north": 46.8 },
+        "bounds": {
+          "west": 6.5,
+          "east": 13.5,
+          "south": 41.5,
+          "north": 46.8
+        },
         "pins": [
           { "id": "p1", "name": "Rome FCO", "lat": 41.8003, "lng": 12.2389, "day": 2 },
           { "id": "p2", "name": "Rome Center", "lat": 41.9028, "lng": 12.4964, "day": 3 },
@@ -105,15 +729,5 @@
         ]
       }
     ]
-  },
-  "ticketPlanning": { "items": [] },
-  "preTrip": { "todoItems": [] },
-  "restaurants": [],
-  "mapLinks": {
-    "navigationPolicy": {
-      "noNavigationTypes": [],
-      "selfNavigationTypes": ["meal"]
-    },
-    "navigationPlaces": []
   }
 }
