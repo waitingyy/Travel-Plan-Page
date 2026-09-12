@@ -18,12 +18,20 @@
     "startDate": "2026-10-09",
     "endDate": "2026-10-20",
     "durationDays": 12
+{
+  "flights": {
+    "items": [],
+    "segments": []
   },
-  "flights": [],
   "flightSegments": [],
-  "itinerary": {
-    "days": []
-  },
+  "trip": {
+    "status": "draft",
+    "startDate": "2026-10-09",
+    "endDate": "2026-10-20",
+    "destination": "義大利",
+    "durationDays": 12,
+    "flights": []
+},
   "days": [],
   "todo": [],
   "config": {
