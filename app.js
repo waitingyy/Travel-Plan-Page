@@ -368,12 +368,53 @@ function renderFlights() {
 }
 
 function updateFlightCountdowns() {
-  state.data.flightJourneys.forEach((journey) => {
-    const target = $(`[data-countdown-journey="${journey.id}"]`);
-    if (!target || target.dataset.placeholder === "true" || journey.placeholder) return;
-    const status = journeyStatusAndTarget(journeyFlights(journey.id));
-    $("strong", target).textContent = status.complete ? "已完成" : preciseCountdownText(status.target, "即将出发");
-    $("span", target).textContent = status.label;
+  if (!state || !state.data) return;
+
+  const journeys = Array.isArray(state?.data?.flightJourneys)
+    ? state.data.flightJourneys
+    : Array.isArray(state?.data?.flights)
+      ? state.data.flights
+      : [];
+
+  const countdownEls = Array.from(document.querySelectorAll("[data-countdown-journey]"));
+
+  countdownEls.forEach((el) => {
+    const id = el.getAttribute("data-countdown-journey");
+    const journey = journeys.find(j => String(j?.id) === String(id));
+
+    if (!journey) {
+      el.textContent = "—";
+      return;
+    }
+
+    const rawTime =
+      journey.departureTime ||
+      journey.departureAt ||
+      journey.departure_date ||
+      null;
+
+    if (!rawTime) {
+      el.textContent = "—";
+      return;
+    }
+
+    const target = new Date(rawTime).getTime();
+    if (Number.isNaN(target)) {
+      el.textContent = "—";
+      return;
+    }
+
+    const now = Date.now();
+    const diff = target - now;
+
+    if (diff <= 0) {
+      el.textContent = "已出發";
+      return;
+    }
+
+    const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    el.textContent = `${d}天 ${h}小時`;
   });
 }
 
