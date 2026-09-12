@@ -3,11 +3,11 @@
 
   const STORAGE_VERSION = 1;
   const DEFAULT_SETTINGS = Object.freeze({
-    baseCurrency: "CNY",
-    commonCurrencies: ["EUR", "CHF", "HKD"],
-    lastCurrency: "CNY"
+  baseCurrency: "HKD",
+  commonCurrencies: ["EUR", "CHF", "CNY"],
+  lastCurrency: "HKD"
   });
-  const CATEGORIES = Object.freeze(["餐饮", "交通", "住宿", "门票", "购物", "其他"]);
+  const CATEGORIES = Object.freeze(["餐饮", "交通", "住宿", "门票", "购物", "機票", "其他"]);
   const AVATAR_COLORS = Object.freeze([
     "#D96C42", "#217D91", "#5C8E62", "#8B6AA8", "#C58B32",
     "#4F72A2", "#B85F76", "#4E8F86", "#9A6B4F", "#68798E"
