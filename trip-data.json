@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "metadata": {
-    "tripId": "italy-2026-rescue",
+    "tripId": "recovery-2026",
     "title": "義大利行程",
     "destination": "義大利",
     "language": "zh-CN"
@@ -14,24 +14,16 @@
     "durationDays": 12
   },
   "overview": {
+    "title": "義大利行程",
     "destination": "義大利",
     "startDate": "2026-10-09",
     "endDate": "2026-10-20",
     "durationDays": 12
-{
-  "flights": {
-    "items": [],
-    "segments": []
   },
-  "flightSegments": [],
-  "trip": {
-    "status": "draft",
-    "startDate": "2026-10-09",
-    "endDate": "2026-10-20",
-    "destination": "義大利",
-    "durationDays": 12,
-    "flights": []
-},
+  "flights": [],
+  "itinerary": {
+    "days": []
+  },
   "days": [],
   "todo": [],
   "config": {
