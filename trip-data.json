@@ -14,16 +14,17 @@
     "durationDays": 12
   },
   "overview": {
-    "title": "義大利行程",
     "destination": "義大利",
     "startDate": "2026-10-09",
     "endDate": "2026-10-20",
     "durationDays": 12
   },
+  "flights": [],
+  "flightSegments": [],
   "itinerary": {
     "days": []
   },
-  "flights": [],
+  "days": [],
   "todo": [],
   "config": {
     "schemaVersion": "1.0.0",
@@ -39,6 +40,5 @@
     "persistence": {
       "mode": "local"
     }
-  },
-  "days": []
+  }
 }
