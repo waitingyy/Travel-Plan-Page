@@ -697,14 +697,14 @@
     },
     "navigationPlaces": []
   },
-"routeMap": {
+  "routeMap": {
   "defaultRegionId": "italy-main",
   "regions": [
     {
       "id": "italy-main",
       "name": "Italy Main",
-      "baseImage": "/assets/maps/italy-main.jpg",
-      "image": "/assets/maps/italy-main.jpg",
+      "baseImage": "/maps/mist-coast-base.png",
+      "image": "/maps/mist-coast-base.png",
       "bounds": { "west": 6.5, "east": 13.5, "south": 41.5, "north": 46.8 },
       "pins": [
         { "id": "p1", "name": "Rome FCO", "lat": 41.8003, "lng": 12.2389, "day": 2 },
