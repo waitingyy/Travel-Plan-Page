@@ -24,7 +24,7 @@
     "assets": {}
   },
   "trip": {
-    "status": "planned",
+    "status": "draft",
     "startDate": "2026-10-09",
     "endDate": "2026-10-20",
     "dayCount": 12,
@@ -156,10 +156,28 @@
   "days": [
     {
       "day": 1,
+      "dayNumber": 1,
       "date": "2026-10-09",
+      "isoDate": "2026-10-09",
       "title": "香港出發",
+      "label": "香港出發",
       "summary": "晚間航班出發，前往羅馬（經伊斯坦堡轉機）。",
+      "note": "晚間航班出發，前往羅馬（經伊斯坦堡轉機）。",
       "schedule": [
+        {
+          "time": "22:30",
+          "type": "flight",
+          "text": "HKG 起飛（TK71）"
+        }
+      ],
+      "items": [
+        {
+          "time": "22:30",
+          "type": "flight",
+          "text": "HKG 起飛（TK71）"
+        }
+      ],
+      "activities": [
         {
           "time": "22:30",
           "type": "flight",
@@ -169,10 +187,48 @@
     },
     {
       "day": 2,
+      "dayNumber": 2,
       "date": "2026-10-10",
+      "isoDate": "2026-10-10",
       "title": "抵達羅馬",
+      "label": "抵達羅馬",
       "summary": "抵達 FCO，入住後輕鬆步行適應時差。",
+      "note": "抵達 FCO，入住後輕鬆步行適應時差。",
       "schedule": [
+        {
+          "time": "09:20",
+          "type": "flight",
+          "text": "抵達 FCO（羅馬）"
+        },
+        {
+          "time": "11:30",
+          "type": "check-in",
+          "text": "前往並入住 Astom Suites"
+        },
+        {
+          "time": "傍晚",
+          "type": "walk",
+          "text": "西班牙台階 / 特雷維噴泉"
+        }
+      ],
+      "items": [
+        {
+          "time": "09:20",
+          "type": "flight",
+          "text": "抵達 FCO（羅馬）"
+        },
+        {
+          "time": "11:30",
+          "type": "check-in",
+          "text": "前往並入住 Astom Suites"
+        },
+        {
+          "time": "傍晚",
+          "type": "walk",
+          "text": "西班牙台階 / 特雷維噴泉"
+        }
+      ],
+      "activities": [
         {
           "time": "09:20",
           "type": "flight",
@@ -192,9 +248,13 @@
     },
     {
       "day": 3,
+      "dayNumber": 3,
       "date": "2026-10-11",
+      "isoDate": "2026-10-11",
       "title": "羅馬古城日",
+      "label": "羅馬古城日",
       "summary": "上午古城步行，下午按時段進入鬥獸場。",
+      "note": "上午古城步行，下午按時段進入鬥獸場。",
       "schedule": [
         {
           "time": "08:30",
@@ -215,20 +275,87 @@
           "time": "14:15",
           "type": "attraction",
           "text": "鬥獸場（已確認時段）"
+        }
+      ],
+      "items": [
+        {
+          "time": "08:30",
+          "type": "attraction",
+          "text": "特雷維噴泉"
         },
         {
-          "time": "15:30",
-          "type": "walk",
-          "text": "古羅馬廣場 / 帕拉蒂尼山（精簡）"
+          "time": "09:15",
+          "type": "attraction",
+          "text": "萬神殿"
+        },
+        {
+          "time": "10:00",
+          "type": "attraction",
+          "text": "納沃納廣場"
+        },
+        {
+          "time": "14:15",
+          "type": "attraction",
+          "text": "鬥獸場（已確認時段）"
+        }
+      ],
+      "activities": [
+        {
+          "time": "08:30",
+          "type": "attraction",
+          "text": "特雷維噴泉"
+        },
+        {
+          "time": "09:15",
+          "type": "attraction",
+          "text": "萬神殿"
+        },
+        {
+          "time": "10:00",
+          "type": "attraction",
+          "text": "納沃納廣場"
+        },
+        {
+          "time": "14:15",
+          "type": "attraction",
+          "text": "鬥獸場（已確認時段）"
         }
       ]
     },
     {
       "day": 4,
+      "dayNumber": 4,
       "date": "2026-10-12",
+      "isoDate": "2026-10-12",
       "title": "梵蒂岡日",
+      "label": "梵蒂岡日",
       "summary": "早上聖彼得大教堂，下午梵蒂岡博物館。",
+      "note": "早上聖彼得大教堂，下午梵蒂岡博物館。",
       "schedule": [
+        {
+          "time": "07:30",
+          "type": "attraction",
+          "text": "聖彼得大教堂"
+        },
+        {
+          "time": "13:00",
+          "type": "attraction",
+          "text": "梵蒂岡博物館 + 西斯汀禮拜堂"
+        }
+      ],
+      "items": [
+        {
+          "time": "07:30",
+          "type": "attraction",
+          "text": "聖彼得大教堂"
+        },
+        {
+          "time": "13:00",
+          "type": "attraction",
+          "text": "梵蒂岡博物館 + 西斯汀禮拜堂"
+        }
+      ],
+      "activities": [
         {
           "time": "07:30",
           "type": "attraction",
@@ -243,9 +370,13 @@
     },
     {
       "day": 5,
+      "dayNumber": 5,
       "date": "2026-10-13",
+      "isoDate": "2026-10-13",
       "title": "羅馬前往佛羅倫斯",
+      "label": "羅馬前往佛羅倫斯",
       "summary": "上午高鐵，下午佛羅倫斯老城散步。",
+      "note": "上午高鐵，下午佛羅倫斯老城散步。",
       "schedule": [
         {
           "time": "08:55-10:31",
@@ -256,20 +387,57 @@
           "time": "下午",
           "type": "walk",
           "text": "主教座堂外觀 / 老橋 / 市中心"
+        }
+      ],
+      "items": [
+        {
+          "time": "08:55-10:31",
+          "type": "transfer",
+          "text": "Roma Termini → Firenze SMN（火車）"
         },
         {
-          "time": "傍晚",
-          "type": "attraction",
-          "text": "米開朗基羅廣場"
+          "time": "下午",
+          "type": "walk",
+          "text": "主教座堂外觀 / 老橋 / 市中心"
+        }
+      ],
+      "activities": [
+        {
+          "time": "08:55-10:31",
+          "type": "transfer",
+          "text": "Roma Termini → Firenze SMN（火車）"
+        },
+        {
+          "time": "下午",
+          "type": "walk",
+          "text": "主教座堂外觀 / 老橋 / 市中心"
         }
       ]
     },
     {
       "day": 6,
+      "dayNumber": 6,
       "date": "2026-10-14",
+      "isoDate": "2026-10-14",
       "title": "烏菲茲美術館日",
+      "label": "烏菲茲美術館日",
       "summary": "核心安排為 Uffizi，其餘時段可機動調整。",
+      "note": "核心安排為 Uffizi，其餘時段可機動調整。",
       "schedule": [
+        {
+          "time": "09:00",
+          "type": "attraction",
+          "text": "Uffizi Gallery（待預訂）"
+        }
+      ],
+      "items": [
+        {
+          "time": "09:00",
+          "type": "attraction",
+          "text": "Uffizi Gallery（待預訂）"
+        }
+      ],
+      "activities": [
         {
           "time": "09:00",
           "type": "attraction",
@@ -279,10 +447,28 @@
     },
     {
       "day": 7,
+      "dayNumber": 7,
       "date": "2026-10-15",
+      "isoDate": "2026-10-15",
       "title": "托斯卡尼一日遊",
+      "label": "托斯卡尼一日遊",
       "summary": "建議 Siena / San Gimignano / Chianti 路線。",
+      "note": "建議 Siena / San Gimignano / Chianti 路線。",
       "schedule": [
+        {
+          "time": "08:00-19:00",
+          "type": "transfer",
+          "text": "托斯卡尼一日遊（Option 3）"
+        }
+      ],
+      "items": [
+        {
+          "time": "08:00-19:00",
+          "type": "transfer",
+          "text": "托斯卡尼一日遊（Option 3）"
+        }
+      ],
+      "activities": [
         {
           "time": "08:00-19:00",
           "type": "transfer",
@@ -292,9 +478,13 @@
     },
     {
       "day": 8,
+      "dayNumber": 8,
       "date": "2026-10-16",
+      "isoDate": "2026-10-16",
       "title": "大衛像與穹頂",
-      "summary": "上午 Accademia，下午 Duomo Dome，晚餐建議預約。",
+      "label": "大衛像與穹頂",
+      "summary": "上午 Accademia，下午 Duomo Dome。",
+      "note": "上午 Accademia，下午 Duomo Dome。",
       "schedule": [
         {
           "time": "09:00",
@@ -305,38 +495,98 @@
           "time": "14:30",
           "type": "attraction",
           "text": "Brunelleschi Dome（待預訂）"
+        }
+      ],
+      "items": [
+        {
+          "time": "09:00",
+          "type": "attraction",
+          "text": "Accademia Gallery（待預訂）"
         },
         {
-          "time": "19:30",
-          "type": "restaurant",
-          "text": "Trattoria Dall'Oste（建議預約）"
+          "time": "14:30",
+          "type": "attraction",
+          "text": "Brunelleschi Dome（待預訂）"
+        }
+      ],
+      "activities": [
+        {
+          "time": "09:00",
+          "type": "attraction",
+          "text": "Accademia Gallery（待預訂）"
+        },
+        {
+          "time": "14:30",
+          "type": "attraction",
+          "text": "Brunelleschi Dome（待預訂）"
         }
       ]
     },
     {
       "day": 9,
+      "dayNumber": 9,
       "date": "2026-10-17",
+      "isoDate": "2026-10-17",
       "title": "佛羅倫斯前往威尼斯",
-      "summary": "上午高鐵，下午水上巴士線 + 主島步行。",
+      "label": "佛羅倫斯前往威尼斯",
+      "summary": "上午高鐵，下午主島步行。",
+      "note": "上午高鐵，下午主島步行。",
       "schedule": [
         {
           "time": "09:39-11:55",
           "type": "transfer",
           "text": "Firenze SMN → Venezia Santa Lucia（火車）"
-        },
+        }
+      ],
+      "items": [
         {
-          "time": "下午",
-          "type": "walk",
-          "text": "Vaporetto Line 1 / Rialto / San Marco 夜景"
+          "time": "09:39-11:55",
+          "type": "transfer",
+          "text": "Firenze SMN → Venezia Santa Lucia（火車）"
+        }
+      ],
+      "activities": [
+        {
+          "time": "09:39-11:55",
+          "type": "transfer",
+          "text": "Firenze SMN → Venezia Santa Lucia（火車）"
         }
       ]
     },
     {
       "day": 10,
+      "dayNumber": 10,
       "date": "2026-10-18",
+      "isoDate": "2026-10-18",
       "title": "威尼斯核心景點",
+      "label": "威尼斯核心景點",
       "summary": "總督宮與聖馬可大教堂為主。",
+      "note": "總督宮與聖馬可大教堂為主。",
       "schedule": [
+        {
+          "time": "09:00",
+          "type": "attraction",
+          "text": "Doge's Palace（待預訂）"
+        },
+        {
+          "time": "14:00",
+          "type": "attraction",
+          "text": "Basilica di San Marco（待預訂）"
+        }
+      ],
+      "items": [
+        {
+          "time": "09:00",
+          "type": "attraction",
+          "text": "Doge's Palace（待預訂）"
+        },
+        {
+          "time": "14:00",
+          "type": "attraction",
+          "text": "Basilica di San Marco（待預訂）"
+        }
+      ],
+      "activities": [
         {
           "time": "09:00",
           "type": "attraction",
@@ -351,10 +601,38 @@
     },
     {
       "day": 11,
+      "dayNumber": 11,
       "date": "2026-10-19",
+      "isoDate": "2026-10-19",
       "title": "威尼斯離境",
+      "label": "威尼斯離境",
       "summary": "白天收尾，晚間航班離開威尼斯。",
+      "note": "白天收尾，晚間航班離開威尼斯。",
       "schedule": [
+        {
+          "time": "15:00",
+          "type": "transfer",
+          "text": "前往 VCE 機場"
+        },
+        {
+          "time": "20:00",
+          "type": "flight",
+          "text": "VCE 起飛（TK1870）"
+        }
+      ],
+      "items": [
+        {
+          "time": "15:00",
+          "type": "transfer",
+          "text": "前往 VCE 機場"
+        },
+        {
+          "time": "20:00",
+          "type": "flight",
+          "text": "VCE 起飛（TK1870）"
+        }
+      ],
+      "activities": [
         {
           "time": "15:00",
           "type": "transfer",
@@ -369,10 +647,28 @@
     },
     {
       "day": 12,
+      "dayNumber": 12,
       "date": "2026-10-20",
+      "isoDate": "2026-10-20",
       "title": "抵達香港",
+      "label": "抵達香港",
       "summary": "返程抵港，行程完成。",
+      "note": "返程抵港，行程完成。",
       "schedule": [
+        {
+          "time": "17:15",
+          "type": "flight",
+          "text": "抵達 HKG（TK70）"
+        }
+      ],
+      "items": [
+        {
+          "time": "17:15",
+          "type": "flight",
+          "text": "抵達 HKG（TK70）"
+        }
+      ],
+      "activities": [
         {
           "time": "17:15",
           "type": "flight",
@@ -381,133 +677,6 @@
       ]
     }
   ],
-  "places": [
-    {
-      "id": "p-colosseum",
-      "name": "Colosseum",
-      "city": "Rome",
-      "countryCode": "IT"
-    },
-    {
-      "id": "p-vatican",
-      "name": "Vatican Museums",
-      "city": "Rome",
-      "countryCode": "VA"
-    },
-    {
-      "id": "p-uffizi",
-      "name": "Uffizi Gallery",
-      "city": "Florence",
-      "countryCode": "IT"
-    },
-    {
-      "id": "p-accademia",
-      "name": "Accademia Gallery",
-      "city": "Florence",
-      "countryCode": "IT"
-    },
-    {
-      "id": "p-duomo-florence",
-      "name": "Florence Duomo",
-      "city": "Florence",
-      "countryCode": "IT"
-    },
-    {
-      "id": "p-san-marco",
-      "name": "Piazza San Marco",
-      "city": "Venice",
-      "countryCode": "IT"
-    }
-  ],
-  "restaurants": [
-    {
-      "id": "r-dalloste",
-      "name": "Trattoria Dall'Oste",
-      "city": "Florence",
-      "status": "to-book"
-    }
-  ],
-  "bookingsAndTickets": [
-    {
-      "id": "b-colosseum",
-      "date": "2026-10-11",
-      "name": "Colosseum Entry",
-      "time": "14:15",
-      "status": "booked",
-      "documentUrl": ""
-    },
-    {
-      "id": "b-uffizi",
-      "date": "2026-10-14",
-      "name": "Uffizi Gallery",
-      "time": "09:00",
-      "status": "pending",
-      "documentUrl": ""
-    },
-    {
-      "id": "b-accademia",
-      "date": "2026-10-16",
-      "name": "Accademia Gallery",
-      "time": "09:00",
-      "status": "pending",
-      "documentUrl": ""
-    },
-    {
-      "id": "b-duomo-dome",
-      "date": "2026-10-16",
-      "name": "Brunelleschi Dome",
-      "time": "14:30",
-      "status": "pending",
-      "documentUrl": ""
-    },
-    {
-      "id": "b-doges",
-      "date": "2026-10-18",
-      "name": "Doge's Palace",
-      "time": "09:00",
-      "status": "pending",
-      "documentUrl": ""
-    },
-    {
-      "id": "b-san-marco",
-      "date": "2026-10-18",
-      "name": "Basilica di San Marco",
-      "time": "14:00",
-      "status": "pending",
-      "documentUrl": ""
-    }
-  ],
-  "ticketPlanning": {
-    "statusStorage": "local",
-    "statusStorageNote": "門票狀態預設只保存在目前瀏覽器。",
-    "items": [
-      {
-        "id": "tp-1",
-        "label": "10/12 梵蒂岡博物館（13:00）",
-        "status": "pending"
-      },
-      {
-        "id": "tp-2",
-        "label": "10/14 Uffizi（09:00/09:30）",
-        "status": "pending"
-      },
-      {
-        "id": "tp-3",
-        "label": "10/16 Accademia（09:00/09:30）",
-        "status": "pending"
-      },
-      {
-        "id": "tp-4",
-        "label": "10/16 Duomo Dome（14:00/15:00）",
-        "status": "pending"
-      },
-      {
-        "id": "tp-5",
-        "label": "10/18 Doge's Palace + San Marco",
-        "status": "pending"
-      }
-    ]
-  },
   "preTrip": {
     "packingItems": [
       {
@@ -525,115 +694,6 @@
         "text": "常備藥與防曬",
         "completed": false
       }
-    ],
-    "preparationsExplicitlyMentioned": [
-      "預訂 Uffizi",
-      "預訂 Accademia",
-      "預訂 Duomo Dome",
-      "預訂 Doge's Palace",
-      "預訂 San Marco",
-      "確認 Vatican Museums",
-      "預訂 Dall'Oste"
-    ],
-    "missingNote": "航班轉機段精確時間、部分門票憑證連結待補充。"
-  },
-  "mapLinks": {
-    "providedGoogleMapsLinks": [],
-    "note": "可後續補充官方地圖連結。",
-    "cityLevelNavigationDisabled": false,
-    "navigationPolicy": {
-      "noNavigationTypes": ["flight", "note", "rest"],
-      "selfNavigationTypes": [
-        "drive",
-        "return",
-        "transfer",
-        "check-in",
-        "check-out",
-        "restaurant",
-        "attraction",
-        "walk",
-        "hike"
-      ]
-    },
-    "navigationPlaces": []
-  },
-  "issuesAndUncertainties": [
-    "TK71/TK1861/TK1870/TK70 轉機段精確時間待補充",
-    "Colosseum 是否包含 Arena / Underground 待確認",
-    "多項門票仍待預訂"
-  ],
-  "map": {
-    "schemaVersion": "1.0-lite",
-    "mapMode": "template-auto",
-    "templateId": "auto",
-    "disclaimer": "本圖僅表達地點的相對方位與路線順序，不代表真實比例或精確地理邊界。",
-    "places": [
-      {
-        "id": "m-rome",
-        "name": "Rome",
-        "lat": 41.9028,
-        "lng": 12.4964,
-        "countryCode": "IT"
-      },
-      {
-        "id": "m-florence",
-        "name": "Florence",
-        "lat": 43.7696,
-        "lng": 11.2558,
-        "countryCode": "IT"
-      },
-      {
-        "id": "m-siena",
-        "name": "Siena",
-        "lat": 43.3188,
-        "lng": 11.3308,
-        "countryCode": "IT"
-      },
-      {
-        "id": "m-venice",
-        "name": "Venice",
-        "lat": 45.4408,
-        "lng": 12.3155,
-        "countryCode": "IT"
-      }
-    ],
-    "routes": [
-      {
-        "id": "mr-1",
-        "label": "Rome → Florence",
-        "fromPlaceId": "m-rome",
-        "toPlaceId": "m-florence",
-        "day": 5
-      },
-      {
-        "id": "mr-2",
-        "label": "Florence → Tuscany (Siena) → Florence",
-        "fromPlaceId": "m-florence",
-        "toPlaceId": "m-siena",
-        "day": 7
-      },
-      {
-        "id": "mr-3",
-        "label": "Florence → Venice",
-        "fromPlaceId": "m-florence",
-        "toPlaceId": "m-venice",
-        "day": 9
-      }
-    ],
-    "dailyRoutes": [
-      {
-        "day": 5,
-        "routeIds": ["mr-1"]
-      },
-      {
-        "day": 7,
-        "routeIds": ["mr-2"]
-      },
-      {
-        "day": 9,
-        "routeIds": ["mr-3"]
-      }
     ]
   }
 }
-
