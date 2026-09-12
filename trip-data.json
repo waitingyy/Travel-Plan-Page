@@ -1,5 +1,7 @@
 {
+  "schemaVersion": "1.0.0",
   "metadata": {
+    "tripId": "italy-2026-rescue",
     "title": "義大利行程",
     "destination": "義大利",
     "language": "zh-CN"
@@ -9,6 +11,21 @@
     "startDate": "2026-10-09",
     "endDate": "2026-10-20",
     "destination": "義大利"
+  },
+  "config": {
+    "schemaVersion": "1.0.0",
+    "modules": {
+      "overview": true,
+      "itinerary": true,
+      "todo": true,
+      "flights": true,
+      "ledger": true,
+      "driving": false
+    },
+    "language": "zh-CN",
+    "persistence": {
+      "mode": "local"
+    }
   },
   "days": []
 }
